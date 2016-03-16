@@ -16,7 +16,7 @@ echo "password toor" >> /etc/quagga/ripd.conf
 echo "enable password toor" >> /etc/quagga/ripd.conf
 echo "!" >> /etc/quagga/ripd.conf
 echo "router rip" >> /etc/quagga/ripd.conf
-echo " reditribute connected" >> /etc/quagga/ripd.conf
+echo " redistribute connected" >> /etc/quagga/ripd.conf
 echo " network 10.0.30.0/24" >> /etc/quagga/ripd.conf
 echo " network 10.0.200.0/24" >> /etc/quagga/ripd.conf
 echo "!" >> /etc/quagga/ripd.conf
