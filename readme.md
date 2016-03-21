@@ -1,5 +1,5 @@
 
-Konfiguracja maszyn wirtualnych:
+Konfiguracja maszyn wirtualnych:<br /><br /><br /><br />
 R1 -> sieć X = eth0 -> 10.0.1.0/24
       sieć Y = eth1 -> 10.0.200.0/24
       sieć A = eth2 -> 192.168.0.0/24
