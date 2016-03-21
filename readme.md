@@ -1,4 +1,17 @@
-NIE GWARANTUJE, ŻE DZIAŁA
+
+Konfiguracja maszyn wirtualnych:
+R1 -> sieć X = eth0 -> 10.0.1.0/24
+      sieć Y = eth1 -> 10.0.200.0/24
+      sieć A = eth2 -> 192.168.0.0/24
+      
+R2 -> sieć B = eth0 -> 172.16.0.0/24
+      sieć Z = eth1 -> 10.0.30.0/24
+      sieć X = eth2 -> 10.0.1.0/24
+      
+R3 -> sieć Y = eth0 -> 10.0.200.0/24
+      sieć Z = eth1 -> 10.0.30.0/24
+      sieć C = eth2 -> 192.168.100.0/24
+
 
 1. Odpalamy maszyny
 2. Prawdopodobnie na każdej maszynie adapter 4 jest już ustawiony na tryb NAT. Jeżeli tak nie jest to trzeba zmienić.
