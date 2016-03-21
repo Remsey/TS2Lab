@@ -1,16 +1,16 @@
 
-Konfiguracja maszyn wirtualnych:<br /><br /><br /><br />
-R1 -> sieć X = eth0 -> 10.0.1.0/24
-      sieć Y = eth1 -> 10.0.200.0/24
-      sieć A = eth2 -> 192.168.0.0/24
+Konfiguracja maszyn wirtualnych:<br /><br />
+R1 -> sieć X = eth0 -> 10.0.1.0/24<br />
+      sieć Y = eth1 -> 10.0.200.0/24<br />
+      sieć A = eth2 -> 192.168.0.0/24<br /><br />
       
-R2 -> sieć B = eth0 -> 172.16.0.0/24
-      sieć Z = eth1 -> 10.0.30.0/24
-      sieć X = eth2 -> 10.0.1.0/24
+R2 -> sieć B = eth0 -> 172.16.0.0/24<br />
+      sieć Z = eth1 -> 10.0.30.0/24<br />
+      sieć X = eth2 -> 10.0.1.0/24<br /><br />
       
-R3 -> sieć Y = eth0 -> 10.0.200.0/24
-      sieć Z = eth1 -> 10.0.30.0/24
-      sieć C = eth2 -> 192.168.100.0/24
+R3 -> sieć Y = eth0 -> 10.0.200.0/24<br />
+      sieć Z = eth1 -> 10.0.30.0/24<br />
+      sieć C = eth2 -> 192.168.100.0/24<br /><br />
 
 
 1. Odpalamy maszyny
