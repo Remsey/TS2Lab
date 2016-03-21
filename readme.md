@@ -1,7 +1,7 @@
 
 Konfiguracja maszyn wirtualnych:<br /><br />
 
-R1:
+R1:<br />
 sieć X = eth0 -> 10.0.1.0/24<br />
 sieć Y = eth1 -> 10.0.200.0/24<br />
 sieć A = eth2 -> 192.168.0.0/24<br /><br />
@@ -16,13 +16,11 @@ sieć Y = eth0 -> 10.0.200.0/24<br />
 sieć Z = eth1 -> 10.0.30.0/24<br />
 sieć C = eth2 -> 192.168.100.0/24<br /><br />
 
-
-1. Odpalamy maszyny
-2. Prawdopodobnie na każdej maszynie adapter 4 jest już ustawiony na tryb NAT. Jeżeli tak nie jest to trzeba zmienić.
-3. Na każdej maszynie wpisujemy: dhclient3 eth3 -> wymuszenie pobrania adresu IP od komputera gospodarza.
-4. Następnie instalujemy git-core i curl, czyli: apt-get install curl git-core (w sumie nie wiem czy ten krok jest potrzebny ale nie zaszkodzi :D )
-5. Pobieramy repo: git clone git://github.com/Remsey/TS2Lab.git
-6. Przechodzimy do pobranego repo: cd TS2Lab/
-7. Dodajemy prawo uruchamiania: chmod +x Rx.sh (za x podstaw numer routera)
-8. Odpalamy skrypt: ./Rx.sh ( za x numer routera)
-9. Uruchamiamy demona quagga: /etc/init.d/quagga start
+Konfiguracja routingu:<br />
+1. Uruchamiamy maszyny wirtualne<br />
+2. Wpisujemy polecenie: dhclient3 eth3 (eth3 to interfejs, na którym maszyna ma ustawione NAT w VirtualBoxie)<br />
+3. Klonujemy repozytorium: git clone git://github.com/Remsey/TS2Lab.git<br />
+4. Przechodzimy do odpowiedniego katalogu w zależności od zadania: cd TS2Lab/RIP_conf/<br />
+5. Dodajemy prawo uruchamiania: chmod +x plik.sh<br />
+6. Uruchamiamy skrypt: ./plik.sh<br />
+7. Jeżeli konfigurujemy router to uruchamiamy demona quagga: /etc/init.d/quagga start<br />
