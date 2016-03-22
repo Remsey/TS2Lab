@@ -16,6 +16,12 @@ echo "hostname click" >> /etc/quagga/ospfd.conf
 echo "password toor" >> /etc/quagga/ospfd.conf
 echo "enable password toor" >> /etc/quagga/ospfd.conf
 echo "!" >> /etc/quagga/ospfd.conf
+echo "interface eth0" >> /etc/quagga/ospfd.conf
+echo "interface eth1" >> /etc/quagga/ospfd.conf
+echo "interface eth2" >> /etc/quagga/ospfd.conf
+echo "interface eth3" >> /etc/quagga/ospfd.conf
+echo "interface lo" >> /etc/quagga/ospfd.conf
+echo "interface sit0" >> /etc/quagga/ospfd.conf
 echo "router ospf" >> /etc/quagga/ospfd.conf
 echo " redistribute connected" >> /etc/quagga/ospfd.conf
 echo " network 192.168.0.0/24 area 0.0.0.0" >> /etc/quagga/ospfd.conf
