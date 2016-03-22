@@ -9,7 +9,7 @@ echo "#### DONE ####"
 # /etc/quagga/zebra.conf
 echo "hostname click" > /etc/quagga/zebra.conf
 echo "password toor" >> /etc/quagga/zebra.conf
-echo "enable password toor" >> /et/quagga/zebra.conf
+echo "enable password toor" >> /etc/quagga/zebra.conf
 # /etc/quagga/ospfd.conf
 echo "! from github.com/Remsey/TS2Lab" > /etc/quagga/ospfd.conf
 echo "hostname click" >> /etc/quagga/ospfd.conf
